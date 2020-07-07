@@ -1,11 +1,11 @@
-# Python-Plate-Scanner
+# Python Plate Scanner
 
 Simple Python script used for scanning plate numbers, based on OCR API.
 
 Warning : This script only works with **_Python3_**
 
 ## Usage
-Extract the all the files in the repo to a folder of your choice.
+Extract all the files in the repo to a folder of your choice.
 
 ## Simple usage
 Run the next command from the same folder where you extracted project's files, 
@@ -19,3 +19,22 @@ Read config file to set parameters, **_You can overide (or add for list) any par
 ```
 >>> python main.py -c config/config.json
 ```
+
+## Additional Command line arguments:
+  `-h, --help`            
+shows detailed usage help message
+
+  `-i INPUT, --input INPUT`            
+Input directory name
+  
+  `-d DATABASE, --database DATABASE`            
+DataBase Name default is [plate]
+  
+  `-o OUTPUT, --output OUTPUT`            
+  Output file name. If not given, default output is: [STDOUT]
+  
+  `-l LOG, --log LOG`            
+  Log level [0-basic, 1-standard[default], 2-verbose]
+  
+  `-c CONFIG, --config CONFIG`            
+  Configuration file in json format
