@@ -1,0 +1,6 @@
+{
+	"input":"Input",
+	"database":"plate",
+	"output":"output.txt",
+	"log":1
+}
