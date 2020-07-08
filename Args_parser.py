@@ -33,7 +33,10 @@ def args_parser():
 	dict_arg = args.__dict__
 	for arg in config:
 		if arg in dict_arg:
-			dict_arg[arg] = config[arg]
+			if dict_arg[arg] is not None:
+				continue
+			else:
+				dict_arg[arg] = config[arg]
 	del(dict_arg['config'])
 
 	if dict_arg["input"] == "" or dict_arg["input"] is None:
